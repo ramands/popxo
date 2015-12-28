@@ -1,0 +1,6 @@
+<h1>Playlists</h1>
+<ol>
+	<% @playlists.each do |playlist| %>
+		<li><a href="<%= playlist['link'] %>"><%= playlist['name'] %></a></li>
+	<% end %>
+</ol>

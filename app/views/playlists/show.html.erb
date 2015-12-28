@@ -1,0 +1,22 @@
+<h1>Details of <i><%= @playlist_details['title'] %></i> </h1>
+
+<a href="/playlists">Back to all Playlists</a>
+
+<ul>
+	<% @playlist_details.each do |key,value| %>
+		<% if key != "tracks" && key != "user" %> 
+		    <li><%= key.capitalize%> : <%= value %></li>
+		<% elsif key == "tracks" %> 
+		    <li>
+			    <%= key.capitalize %> : 
+			    <ol>
+			    	<% value.each do |track| %> 
+			    		<li><a target="window" href="/tracks/<%= track['id']%>"><%= track['title'] %></a></li>
+				    <% end %> 
+			    </ol>
+		    </li>
+		<% end %>
+	<% end %>
+</ul>
+
+<a href="/playlists">Back to all Playlists</a>
