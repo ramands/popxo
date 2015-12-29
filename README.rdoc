@@ -18,6 +18,8 @@ OR download the zip and extract it.
 
 <tt>CREATE DATABASE souncloud</tt>
 
+OR use the <tt>rake db:create</tt> command to generate the database. 
+
 * Initialize the database by running the following command in the terminal. (The database initialization is just used for rspec to work properly). 
 
 <tt>rake db:migrate</tt>
