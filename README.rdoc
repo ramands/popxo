@@ -1,6 +1,6 @@
 == README
 
-Make sure you have Ruby Version > 2.2
+Make sure you have Ruby Version >= 2.2
 
 Follow these steps to run the project 
 
@@ -8,13 +8,15 @@ Follow these steps to run the project
 
 <tt>git clone https://github.com/ramands/popxo.git</tt>
 
+OR download the zip and extract it. 
+
 2. Install the gems required by the project
 
 <tt>bundle install</tt>
 
-3. Create a database named souncloud. Run the following command in 
+3. Create a database named souncloud. Run the following command in your mysql database tool
 
-<tt>CERATE DATABASE souncloud</tt>
+<tt>CREATE DATABASE souncloud</tt>
 
 4. Initialize the database by running the flollowing command in the terminal
 
@@ -24,9 +26,9 @@ Follow these steps to run the project
 
 6. Open the project in the browser by entering localhost:3000.
 
-
 The homepage consists of the playlist of a user. By clicking any of the playlist, you will be shown the playlist details including the tracks that are present in that playlist.
 
 To play a track, click any of the hyperlinked songs. You will be taken to another page where the soundcloud player widget will be embedded and the song will auto play. 
 
-NOTE: There might be few songs which are not hyperlinked. These are the songs that the user has not allowed to be embedded by anyone else.
+### NOTE: 
+There might be few songs which are not hyperlinked. These are the songs that the user has not allowed to be embedded by anyone else.
