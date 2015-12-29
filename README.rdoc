@@ -30,11 +30,10 @@ The homepage consists of the playlist of a user. By clicking any of the playlist
 
 To play a track, click any of the hyperlinked songs. You will be taken to another page where the soundcloud player widget will be embedded and the song will auto play. 
 
-== NOTE
-There might be few songs which are not hyperlinked. These are the songs that the user has not allowed to be embedded by anyone else.
+NOTE : There might be few songs which are not hyperlinked. These are the songs that the user has not allowed to be embedded by anyone else.
 
 == TEST CASES USING RSPEC
 
 The test specs can be found in the <tt>controllers</tt> folder which is in the <tt>specs</tt> folder. 
 
-There are two test exaples in each file. To run these test examples, run `bundle execute rspec` from the terminal. 
+There are two test exaples in each file. To run these test examples, run <tt>bundle execute rspec</tt> from the terminal. 
