@@ -8,7 +8,7 @@
 		    <li><%= key.capitalize%> : <%= value == nil || value == "" ? "Detail Not Available" : value %></li>
 		<% elsif key == "tracks" %> 
 		    <li>
-			    <%= key.capitalize %> (Only tracks with links can be embedded. Rest all cannot be embedded due to user restrictions)  : 
+			    <%= key.capitalize %> (Only hyperlinked tracks can be embedded. Rest all cannot be embedded due to user restrictions)  : 
 			    <ol>
 			    	<% value.each do |track| %> 
 			    		<% if track['embeddable_by'] == 'all' %>
