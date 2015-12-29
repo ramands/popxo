@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: popxo_production
+  database: souncloud
   username: popxo
   password: <%= ENV['POPXO_DATABASE_PASSWORD'] %>
