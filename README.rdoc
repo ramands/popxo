@@ -1,30 +1,32 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Make sure you have Ruby Version > 2.2
 
-Things you may want to cover:
+Follow these steps to run the project 
 
-* Ruby version
+1. Clone the project 
 
-* System dependencies
+<tt>git clone https://github.com/ramands/popxo.git</tt>
 
-* Configuration
+2. Install the gems required by the project
 
-* Database creation
+<tt>bundle install</tt>
 
-* Database initialization
+3. Create a database named souncloud. Run the following command in 
 
-* How to run the test suite
+<tt>CERATE DATABASE souncloud</tt>
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Initialize the database by running the flollowing command in the terminal
 
-* Deployment instructions
+<tt>rake db:migrate</tt>
 
-* ...
+5. To run the project, run <tt>rails server</tt> from the terminal. (Make sure that the project root is your present working directory)
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+6. Open the project in the browser by entering localhost:3000.
 
 
+The homepage consists of the playlist of a user. By clicking any of the playlist, you will be shown the playlist details including the tracks that are present in that playlist.
+
+To play a track, click any of the hyperlinked songs. You will be taken to another page where the soundcloud player widget will be embedded and the song will auto play. 
+
+NOTE: There might be few songs which are not hyperlinked. These are the songs that the user has not allowed to be embedded by anyone else.
