@@ -5,13 +5,19 @@
 <ul>
 	<% @playlist_details.each do |key,value| %>
 		<% if key != "tracks" && key != "user" %> 
-		    <li><%= key.capitalize%> : <%= value %></li>
+		    <li><%= key.capitalize%> : <%= value == nil || value == "" ? "Detail Not Available" : value %></li>
 		<% elsif key == "tracks" %> 
 		    <li>
-			    <%= key.capitalize %> : 
+			    <%= key.capitalize %> (Only tracks with links can be embedded. Rest all cannot be embedded due to user restrictions)  : 
 			    <ol>
 			    	<% value.each do |track| %> 
-			    		<li><a target="window" href="/tracks/<%= track['id']%>"><%= track['title'] %></a></li>
+			    		<% if track['embeddable_by'] == 'all' %>
+				    		<li><a target="window" href="/tracks/<%= track['id']%>"><%= track['title'] %></a>
+				    		</li>
+			    		<% else %>
+				    		<li><%= track['title'] %>
+				    		</li>
+			    		<% end %>
 				    <% end %> 
 			    </ol>
 		    </li>
