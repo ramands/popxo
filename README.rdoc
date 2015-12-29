@@ -35,6 +35,6 @@ There might be few songs which are not hyperlinked. These are the songs that the
 
 == TEST CASES USING RSPEC
 
-The test specs can be found in the <tt>specs</tt> folder under the <tt>controllers</tt> folder. 
+The test specs can be found in the <tt>controllers</tt> folder which is in the <tt>specs</tt> folder. 
 
 There are two test exaples in each file. To run these test examples, run `bundle execute rspec` from the terminal. 
